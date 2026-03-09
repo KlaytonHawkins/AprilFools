@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import { RunawayButton } from './runawayButtons'
 import { DisableOnHoverButton } from './DisableOnHoverButton'
+import { LoadingBar } from './LoadingBar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
           count is {count}
         </RunawayButton>
         <DisableOnHoverButton>Disable</DisableOnHoverButton>
+        <LoadingBar />
       </div>
     </>
   )
