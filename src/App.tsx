@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import { RunawayButton } from './runawayButtons'
 import { DisableOnHoverButton } from './DisableOnHoverButton'
+import { MinigameButton } from './MinigameButton'
 import { LoadingBar } from './LoadingBar'
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
           count is {count}
         </RunawayButton>
         <DisableOnHoverButton>Disable</DisableOnHoverButton>
+        <MinigameButton onClick={() => setCount((c) => c + 1)}>
+          Minigame
+        </MinigameButton>
         <LoadingBar />
       </div>
     </>
