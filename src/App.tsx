@@ -4,6 +4,7 @@ import { RunawayButton } from './runawayButtons'
 import { DisableOnHoverButton } from './DisableOnHoverButton'
 import { MinigameButton } from './MinigameButton'
 import { LoadingBar } from './LoadingBar'
+import { LightsOffButton } from './LightsOffButton'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
           Minigame
         </MinigameButton>
         <LoadingBar />
+        <LightsOffButton />
       </div>
     </>
   )
